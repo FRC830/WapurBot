@@ -51,10 +51,26 @@ void Robot::AutonomousInit() {
 }
 
 void Robot::AutonomousPeriodic() {
-  if (m_autoSelected == kAutoNameCustom) {
-    // Custom Auto goes here
-  } else {
-    // Default Auto goes here
+  // auto command = _swerve.GetAutoBuilder();
+
+  switch (m_state)
+  {
+    case 0:
+      m_command_ptr->get()->Initialize();
+      ++m_state;
+      break;
+    case 1:
+      m_command_ptr->get()->Execute();
+      if (m_command_ptr->get()->IsFinished())
+      {
+        ++m_state;
+      }
+    case 2:
+      m_command_ptr->get()->End(false);
+      ++m_state;
+    case 3:
+    default:
+      break;
   }
 }
 
