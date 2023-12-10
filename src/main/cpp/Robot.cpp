@@ -182,6 +182,7 @@ void Robot::AutonomousInit() {
   //     kAutoNameDefault);
   fmt::print("Auto selected: {}\n", m_autoSelected);
   m_trajectory = pathplanner::PathPlanner::loadPathGroup("test_path", {pathplanner::PathConstraints{5_mps, 3.5_mps_sq}});
+  std::cout << "Trajectory size: " << m_trajectory.size() << std::endl;
   m_command_ptr = std::make_unique<frc2::CommandPtr>(_swerve.GetAutoBuilder()->fullAuto(m_trajectory));
   // m_commandptr = std::move(_swerve.GetAutoBuilder()->fullAuto(trajectory));
   m_state = 0;
@@ -218,6 +219,7 @@ void Robot::AutonomousPeriodic() {
 
 void Robot::TeleopInit() 
 {
+  _swerve.SetFieldOriented();
   /* AbsoluteEncoderConfig config;
   config.encoder = &bl_abs_enc;
   config.is_inverted = true;

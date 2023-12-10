@@ -1,0 +1,429 @@
+[
+  {
+    "name": "linuxathena",
+    "architecture": "arm-v7",
+    "operatingSystem": "linux",
+    "flavor": "default",
+    "buildType": "debug",
+    "cppPath": "C:\\Users\\Public\\wpilib\\2023\\roborio\\bin\\arm-frc2023-linux-gnueabi-g++.exe",
+    "cPath": "C:\\Users\\Public\\wpilib\\2023\\roborio\\bin\\arm-frc2023-linux-gnueabi-gcc.exe",
+    "msvc": false,
+    "gcc": true,
+    "systemCppMacros": [],
+    "systemCppArgs": [],
+    "systemCMacros": [],
+    "systemCArgs": [],
+    "allLibFiles": [
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b386996b5be9afcfcc74bda134007ebb\\transformed\\wpilibNewCommands-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\2f4b4fdff546d48a2ec94d9d859673b9\\transformed\\PathplannerLib-cpp-2023.4.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5bde4333795b2bc547373f013d8f0d36\\transformed\\REVLib-cpp-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9a9fcb922f2ccc7773182dc3cb021d75\\transformed\\REVLib-driver-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f780d210f4c1c0270a0c477dfc649513\\transformed\\navx-frc-cpp-2023.0.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c4eb184713ea26d5a2264de69ca203f3\\transformed\\wpilibc-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\43961d27865e1bc32b65fe1f66e5fff5\\transformed\\ntcore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3411ba3f79efe171f8b5cb137301d1ca\\transformed\\hal-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\1aa65efd19152d9e13b992fcabdd64ed\\transformed\\wpimath-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b5807613ff894e0f0eb65bd4c8894dc2\\transformed\\wpinet-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6e06e9d40302800a6653e178e97095e8\\transformed\\wpiutil-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\e88c8cf999323fa754246ed0014b64b0\\transformed\\netcomm-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5ae5cd842bca6a9712f69a710cf33bb7\\transformed\\chipobject-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b18921766438ae03f8001fbf5f1d0d6a\\transformed\\visa-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\d09e0118f10df980af64ae0d47cf5ede\\transformed\\cameraserver-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\7195e715933c12453cc5ead0cf41f47c\\transformed\\cscore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f857b5c56e0c095b21aea4321dbbf949\\transformed\\apriltag-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c85f37b37ca62d00809b79195969f9d9\\transformed\\opencv-cpp-4.6.0-4-headers\\",
+      "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\71c980e49e9e673f996ac1dd3e87ca23\\transformed\\wpilibNewCommands-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\ee9e09acc05ee309a1f59233cef8d4d8\\transformed\\navx-frc-cpp-2023.0.4-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\397f8b19efc7a5193bfbf82dc6149fcf\\transformed\\wpilibc-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3034362ffec7c95c2a2f5101dd25a351\\transformed\\ntcore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\4cbb9b07baf352f153543a9467b189af\\transformed\\hal-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\fbf4525c449bd28b6d9f7245dfe733db\\transformed\\wpimath-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\101fb3ba7ce14ca9b6331135bafe959e\\transformed\\wpinet-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\78983f5f2b3ae8cf7b5e921d39b500c5\\transformed\\wpiutil-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\23f15eb790b150d6a8e956502384132e\\transformed\\cameraserver-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6f154c5ee08c70f7a530eb2c322d720a\\transformed\\cscore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\dd9be4161fd2215c7f1390a6d89daf29\\transformed\\apriltag-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9c1621044dea072845a54ccbe5690761\\transformed\\opencv-cpp-4.6.0-4-sources\\"
+    ],
+    "allLibSources": [
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\71c980e49e9e673f996ac1dd3e87ca23\\transformed\\wpilibNewCommands-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\ee9e09acc05ee309a1f59233cef8d4d8\\transformed\\navx-frc-cpp-2023.0.4-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\397f8b19efc7a5193bfbf82dc6149fcf\\transformed\\wpilibc-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3034362ffec7c95c2a2f5101dd25a351\\transformed\\ntcore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\4cbb9b07baf352f153543a9467b189af\\transformed\\hal-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\fbf4525c449bd28b6d9f7245dfe733db\\transformed\\wpimath-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\101fb3ba7ce14ca9b6331135bafe959e\\transformed\\wpinet-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\78983f5f2b3ae8cf7b5e921d39b500c5\\transformed\\wpiutil-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\23f15eb790b150d6a8e956502384132e\\transformed\\cameraserver-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6f154c5ee08c70f7a530eb2c322d720a\\transformed\\cscore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\dd9be4161fd2215c7f1390a6d89daf29\\transformed\\apriltag-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9c1621044dea072845a54ccbe5690761\\transformed\\opencv-cpp-4.6.0-4-sources\\"
+    ],
+    "allLibHeaders": [
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b386996b5be9afcfcc74bda134007ebb\\transformed\\wpilibNewCommands-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\2f4b4fdff546d48a2ec94d9d859673b9\\transformed\\PathplannerLib-cpp-2023.4.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5bde4333795b2bc547373f013d8f0d36\\transformed\\REVLib-cpp-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9a9fcb922f2ccc7773182dc3cb021d75\\transformed\\REVLib-driver-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f780d210f4c1c0270a0c477dfc649513\\transformed\\navx-frc-cpp-2023.0.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c4eb184713ea26d5a2264de69ca203f3\\transformed\\wpilibc-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\43961d27865e1bc32b65fe1f66e5fff5\\transformed\\ntcore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3411ba3f79efe171f8b5cb137301d1ca\\transformed\\hal-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\1aa65efd19152d9e13b992fcabdd64ed\\transformed\\wpimath-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b5807613ff894e0f0eb65bd4c8894dc2\\transformed\\wpinet-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6e06e9d40302800a6653e178e97095e8\\transformed\\wpiutil-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\e88c8cf999323fa754246ed0014b64b0\\transformed\\netcomm-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5ae5cd842bca6a9712f69a710cf33bb7\\transformed\\chipobject-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b18921766438ae03f8001fbf5f1d0d6a\\transformed\\visa-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\d09e0118f10df980af64ae0d47cf5ede\\transformed\\cameraserver-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\7195e715933c12453cc5ead0cf41f47c\\transformed\\cscore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f857b5c56e0c095b21aea4321dbbf949\\transformed\\apriltag-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c85f37b37ca62d00809b79195969f9d9\\transformed\\opencv-cpp-4.6.0-4-headers\\",
+      "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+    ],
+    "binaries": [
+      {
+        "componentName": "frcUserProgram",
+        "sourceSets": [
+          {
+            "source": {
+              "srcDirs": [
+                "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\cpp\\"
+              ],
+              "includes": [
+                "**/*.cpp",
+                "**/*.cc"
+              ],
+              "excludes": []
+            },
+            "exportedHeaders": {
+              "srcDirs": [
+                "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+              ],
+              "includes": [],
+              "excludes": []
+            },
+            "cpp": true,
+            "args": [
+              "-Wall",
+              "-Wextra",
+              "-std=c++20",
+              "-Wformat=2",
+              "-pedantic",
+              "-Wno-psabi",
+              "-Wno-unused-parameter",
+              "-Wno-error=deprecated-declarations",
+              "-fPIC",
+              "-pthread",
+              "-Wno-error=deprecated-enum-enum-conversion",
+              "-Og",
+              "-g"
+            ],
+            "macros": []
+          }
+        ],
+        "libHeaders": [
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b386996b5be9afcfcc74bda134007ebb\\transformed\\wpilibNewCommands-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\2f4b4fdff546d48a2ec94d9d859673b9\\transformed\\PathplannerLib-cpp-2023.4.4-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5bde4333795b2bc547373f013d8f0d36\\transformed\\REVLib-cpp-2023.1.3-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9a9fcb922f2ccc7773182dc3cb021d75\\transformed\\REVLib-driver-2023.1.3-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f780d210f4c1c0270a0c477dfc649513\\transformed\\navx-frc-cpp-2023.0.4-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c4eb184713ea26d5a2264de69ca203f3\\transformed\\wpilibc-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\43961d27865e1bc32b65fe1f66e5fff5\\transformed\\ntcore-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3411ba3f79efe171f8b5cb137301d1ca\\transformed\\hal-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\1aa65efd19152d9e13b992fcabdd64ed\\transformed\\wpimath-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b5807613ff894e0f0eb65bd4c8894dc2\\transformed\\wpinet-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6e06e9d40302800a6653e178e97095e8\\transformed\\wpiutil-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\e88c8cf999323fa754246ed0014b64b0\\transformed\\netcomm-2023.3.0-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5ae5cd842bca6a9712f69a710cf33bb7\\transformed\\chipobject-2023.3.0-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b18921766438ae03f8001fbf5f1d0d6a\\transformed\\visa-2023.3.0-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\d09e0118f10df980af64ae0d47cf5ede\\transformed\\cameraserver-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\7195e715933c12453cc5ead0cf41f47c\\transformed\\cscore-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f857b5c56e0c095b21aea4321dbbf949\\transformed\\apriltag-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c85f37b37ca62d00809b79195969f9d9\\transformed\\opencv-cpp-4.6.0-4-headers\\",
+          "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+        ],
+        "sharedLibrary": false,
+        "executable": true
+      }
+    ],
+    "sourceBinaries": [
+      {
+        "source": {
+          "srcDirs": [
+            "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\cpp\\"
+          ],
+          "includes": [
+            "**/*.cpp",
+            "**/*.cc"
+          ],
+          "excludes": []
+        },
+        "componentName": "frcUserProgram",
+        "cpp": true,
+        "args": [
+          "-Wall",
+          "-Wextra",
+          "-std=c++20",
+          "-Wformat=2",
+          "-pedantic",
+          "-Wno-psabi",
+          "-Wno-unused-parameter",
+          "-Wno-error=deprecated-declarations",
+          "-fPIC",
+          "-pthread",
+          "-Wno-error=deprecated-enum-enum-conversion",
+          "-Og",
+          "-g"
+        ],
+        "macros": [],
+        "sharedLibrary": false,
+        "executable": true
+      },
+      {
+        "source": {
+          "srcDirs": [
+            "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+          ],
+          "includes": [],
+          "excludes": []
+        },
+        "componentName": "frcUserProgram",
+        "cpp": true,
+        "args": [
+          "-Wall",
+          "-Wextra",
+          "-std=c++20",
+          "-Wformat=2",
+          "-pedantic",
+          "-Wno-psabi",
+          "-Wno-unused-parameter",
+          "-Wno-error=deprecated-declarations",
+          "-fPIC",
+          "-pthread",
+          "-Wno-error=deprecated-enum-enum-conversion",
+          "-Og",
+          "-g"
+        ],
+        "macros": [],
+        "sharedLibrary": false,
+        "executable": true
+      }
+    ],
+    "nameBinaryMap": {
+      "frcUserProgram": 0
+    }
+  },
+  {
+    "name": "linuxathena",
+    "architecture": "arm-v7",
+    "operatingSystem": "linux",
+    "flavor": "default",
+    "buildType": "release",
+    "cppPath": "C:\\Users\\Public\\wpilib\\2023\\roborio\\bin\\arm-frc2023-linux-gnueabi-g++.exe",
+    "cPath": "C:\\Users\\Public\\wpilib\\2023\\roborio\\bin\\arm-frc2023-linux-gnueabi-gcc.exe",
+    "msvc": false,
+    "gcc": true,
+    "systemCppMacros": [],
+    "systemCppArgs": [],
+    "systemCMacros": [],
+    "systemCArgs": [],
+    "allLibFiles": [
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b386996b5be9afcfcc74bda134007ebb\\transformed\\wpilibNewCommands-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\2f4b4fdff546d48a2ec94d9d859673b9\\transformed\\PathplannerLib-cpp-2023.4.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5bde4333795b2bc547373f013d8f0d36\\transformed\\REVLib-cpp-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9a9fcb922f2ccc7773182dc3cb021d75\\transformed\\REVLib-driver-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f780d210f4c1c0270a0c477dfc649513\\transformed\\navx-frc-cpp-2023.0.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c4eb184713ea26d5a2264de69ca203f3\\transformed\\wpilibc-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\43961d27865e1bc32b65fe1f66e5fff5\\transformed\\ntcore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3411ba3f79efe171f8b5cb137301d1ca\\transformed\\hal-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\1aa65efd19152d9e13b992fcabdd64ed\\transformed\\wpimath-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b5807613ff894e0f0eb65bd4c8894dc2\\transformed\\wpinet-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6e06e9d40302800a6653e178e97095e8\\transformed\\wpiutil-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\e88c8cf999323fa754246ed0014b64b0\\transformed\\netcomm-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5ae5cd842bca6a9712f69a710cf33bb7\\transformed\\chipobject-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b18921766438ae03f8001fbf5f1d0d6a\\transformed\\visa-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\d09e0118f10df980af64ae0d47cf5ede\\transformed\\cameraserver-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\7195e715933c12453cc5ead0cf41f47c\\transformed\\cscore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f857b5c56e0c095b21aea4321dbbf949\\transformed\\apriltag-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c85f37b37ca62d00809b79195969f9d9\\transformed\\opencv-cpp-4.6.0-4-headers\\",
+      "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\71c980e49e9e673f996ac1dd3e87ca23\\transformed\\wpilibNewCommands-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\ee9e09acc05ee309a1f59233cef8d4d8\\transformed\\navx-frc-cpp-2023.0.4-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\397f8b19efc7a5193bfbf82dc6149fcf\\transformed\\wpilibc-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3034362ffec7c95c2a2f5101dd25a351\\transformed\\ntcore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\4cbb9b07baf352f153543a9467b189af\\transformed\\hal-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\fbf4525c449bd28b6d9f7245dfe733db\\transformed\\wpimath-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\101fb3ba7ce14ca9b6331135bafe959e\\transformed\\wpinet-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\78983f5f2b3ae8cf7b5e921d39b500c5\\transformed\\wpiutil-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\23f15eb790b150d6a8e956502384132e\\transformed\\cameraserver-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6f154c5ee08c70f7a530eb2c322d720a\\transformed\\cscore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\dd9be4161fd2215c7f1390a6d89daf29\\transformed\\apriltag-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9c1621044dea072845a54ccbe5690761\\transformed\\opencv-cpp-4.6.0-4-sources\\"
+    ],
+    "allLibSources": [
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\71c980e49e9e673f996ac1dd3e87ca23\\transformed\\wpilibNewCommands-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\ee9e09acc05ee309a1f59233cef8d4d8\\transformed\\navx-frc-cpp-2023.0.4-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\397f8b19efc7a5193bfbf82dc6149fcf\\transformed\\wpilibc-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3034362ffec7c95c2a2f5101dd25a351\\transformed\\ntcore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\4cbb9b07baf352f153543a9467b189af\\transformed\\hal-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\fbf4525c449bd28b6d9f7245dfe733db\\transformed\\wpimath-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\101fb3ba7ce14ca9b6331135bafe959e\\transformed\\wpinet-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\78983f5f2b3ae8cf7b5e921d39b500c5\\transformed\\wpiutil-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\23f15eb790b150d6a8e956502384132e\\transformed\\cameraserver-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6f154c5ee08c70f7a530eb2c322d720a\\transformed\\cscore-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\dd9be4161fd2215c7f1390a6d89daf29\\transformed\\apriltag-cpp-2023.4.2-sources\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9c1621044dea072845a54ccbe5690761\\transformed\\opencv-cpp-4.6.0-4-sources\\"
+    ],
+    "allLibHeaders": [
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b386996b5be9afcfcc74bda134007ebb\\transformed\\wpilibNewCommands-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\2f4b4fdff546d48a2ec94d9d859673b9\\transformed\\PathplannerLib-cpp-2023.4.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5bde4333795b2bc547373f013d8f0d36\\transformed\\REVLib-cpp-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9a9fcb922f2ccc7773182dc3cb021d75\\transformed\\REVLib-driver-2023.1.3-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f780d210f4c1c0270a0c477dfc649513\\transformed\\navx-frc-cpp-2023.0.4-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c4eb184713ea26d5a2264de69ca203f3\\transformed\\wpilibc-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\43961d27865e1bc32b65fe1f66e5fff5\\transformed\\ntcore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3411ba3f79efe171f8b5cb137301d1ca\\transformed\\hal-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\1aa65efd19152d9e13b992fcabdd64ed\\transformed\\wpimath-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b5807613ff894e0f0eb65bd4c8894dc2\\transformed\\wpinet-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6e06e9d40302800a6653e178e97095e8\\transformed\\wpiutil-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\e88c8cf999323fa754246ed0014b64b0\\transformed\\netcomm-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5ae5cd842bca6a9712f69a710cf33bb7\\transformed\\chipobject-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b18921766438ae03f8001fbf5f1d0d6a\\transformed\\visa-2023.3.0-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\d09e0118f10df980af64ae0d47cf5ede\\transformed\\cameraserver-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\7195e715933c12453cc5ead0cf41f47c\\transformed\\cscore-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f857b5c56e0c095b21aea4321dbbf949\\transformed\\apriltag-cpp-2023.4.2-headers\\",
+      "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c85f37b37ca62d00809b79195969f9d9\\transformed\\opencv-cpp-4.6.0-4-headers\\",
+      "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+    ],
+    "binaries": [
+      {
+        "componentName": "frcUserProgram",
+        "sourceSets": [
+          {
+            "source": {
+              "srcDirs": [
+                "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\cpp\\"
+              ],
+              "includes": [
+                "**/*.cpp",
+                "**/*.cc"
+              ],
+              "excludes": []
+            },
+            "exportedHeaders": {
+              "srcDirs": [
+                "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+              ],
+              "includes": [],
+              "excludes": []
+            },
+            "cpp": true,
+            "args": [
+              "-Wall",
+              "-Wextra",
+              "-std=c++20",
+              "-Wformat=2",
+              "-pedantic",
+              "-Wno-psabi",
+              "-Wno-unused-parameter",
+              "-Wno-error=deprecated-declarations",
+              "-fPIC",
+              "-pthread",
+              "-Wno-error=deprecated-enum-enum-conversion",
+              "-O2"
+            ],
+            "macros": []
+          }
+        ],
+        "libHeaders": [
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b386996b5be9afcfcc74bda134007ebb\\transformed\\wpilibNewCommands-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\2f4b4fdff546d48a2ec94d9d859673b9\\transformed\\PathplannerLib-cpp-2023.4.4-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5bde4333795b2bc547373f013d8f0d36\\transformed\\REVLib-cpp-2023.1.3-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\9a9fcb922f2ccc7773182dc3cb021d75\\transformed\\REVLib-driver-2023.1.3-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f780d210f4c1c0270a0c477dfc649513\\transformed\\navx-frc-cpp-2023.0.4-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c4eb184713ea26d5a2264de69ca203f3\\transformed\\wpilibc-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\43961d27865e1bc32b65fe1f66e5fff5\\transformed\\ntcore-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\3411ba3f79efe171f8b5cb137301d1ca\\transformed\\hal-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\1aa65efd19152d9e13b992fcabdd64ed\\transformed\\wpimath-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b5807613ff894e0f0eb65bd4c8894dc2\\transformed\\wpinet-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\6e06e9d40302800a6653e178e97095e8\\transformed\\wpiutil-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\e88c8cf999323fa754246ed0014b64b0\\transformed\\netcomm-2023.3.0-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\5ae5cd842bca6a9712f69a710cf33bb7\\transformed\\chipobject-2023.3.0-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\b18921766438ae03f8001fbf5f1d0d6a\\transformed\\visa-2023.3.0-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\d09e0118f10df980af64ae0d47cf5ede\\transformed\\cameraserver-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\7195e715933c12453cc5ead0cf41f47c\\transformed\\cscore-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\f857b5c56e0c095b21aea4321dbbf949\\transformed\\apriltag-cpp-2023.4.2-headers\\",
+          "C:\\Users\\jinze\\.gradle\\caches\\transforms-3\\c85f37b37ca62d00809b79195969f9d9\\transformed\\opencv-cpp-4.6.0-4-headers\\",
+          "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+        ],
+        "sharedLibrary": false,
+        "executable": true
+      }
+    ],
+    "sourceBinaries": [
+      {
+        "source": {
+          "srcDirs": [
+            "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\cpp\\"
+          ],
+          "includes": [
+            "**/*.cpp",
+            "**/*.cc"
+          ],
+          "excludes": []
+        },
+        "componentName": "frcUserProgram",
+        "cpp": true,
+        "args": [
+          "-Wall",
+          "-Wextra",
+          "-std=c++20",
+          "-Wformat=2",
+          "-pedantic",
+          "-Wno-psabi",
+          "-Wno-unused-parameter",
+          "-Wno-error=deprecated-declarations",
+          "-fPIC",
+          "-pthread",
+          "-Wno-error=deprecated-enum-enum-conversion",
+          "-O2"
+        ],
+        "macros": [],
+        "sharedLibrary": false,
+        "executable": true
+      },
+      {
+        "source": {
+          "srcDirs": [
+            "C:\\Users\\jinze\\workspace\\WapurBot\\src\\main\\include\\"
+          ],
+          "includes": [],
+          "excludes": []
+        },
+        "componentName": "frcUserProgram",
+        "cpp": true,
+        "args": [
+          "-Wall",
+          "-Wextra",
+          "-std=c++20",
+          "-Wformat=2",
+          "-pedantic",
+          "-Wno-psabi",
+          "-Wno-unused-parameter",
+          "-Wno-error=deprecated-declarations",
+          "-fPIC",
+          "-pthread",
+          "-Wno-error=deprecated-enum-enum-conversion",
+          "-O2"
+        ],
+        "macros": [],
+        "sharedLibrary": false,
+        "executable": true
+      }
+    ],
+    "nameBinaryMap": {
+      "frcUserProgram": 0
+    }
+  }
+]

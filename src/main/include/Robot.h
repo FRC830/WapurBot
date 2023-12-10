@@ -33,22 +33,26 @@ class Robot : public frc::TimedRobot {
   void TestPeriodic() override;
   void SimulationInit() override;
   void SimulationPeriodic() override;
+  void SwerveInit(); 
   
  private:
+  static const int NUM_MODULES = 4;
+
   frc::SendableChooser<std::string> m_chooser;
   const std::string kAutoNameDefault = "Default";
   const std::string kAutoNameCustom = "My Auto";
   std::string m_autoSelected;
-
-
-  frc::XboxController m_pilot1{1};
-  Elevator m_elevator;
   
-  AnalogAbsoluteEncoder m_back_left_analog_encoder;
-  NeoTurnMotor m_back_left_turn_motor;
-  NavXGyro gyro;
-  AnalogAbsoluteEncoder m_ABSencoder;
-  NeoTurnMotor m_turnMotor;
-  NeoDriveMotor m_driveMotor;
-  WPISwerveModule m_swerveModule_BL;
+  std::array<AnalogAbsoluteEncoder, NUM_MODULES> _abs_encoders;
+  std::array<NeoTurnMotor, NUM_MODULES> _turn_motors;
+  std::array<NeoDriveMotor, NUM_MODULES> _drive_motors;
+  std::array<WPISwerveModule, NUM_MODULES> _modules;
+  WPISwerveDrive _swerve;
+  frc::XboxController _xbox_controller{0};
+
+  
+  NavXGyro _gyro;
+  int m_state;
+  std::vector<pathplanner::PathPlannerTrajectory> m_trajectory;
+  std::unique_ptr<frc2::CommandPtr> m_command_ptr;
 };

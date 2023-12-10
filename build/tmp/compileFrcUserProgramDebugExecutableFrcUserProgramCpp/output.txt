@@ -1,0 +1,37 @@
+See file:///C:/Users/jinze/workspace/WapurBot/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+compiling Elevator.cpp successful.
+
+compiling NeoTurnMotor.cpp successful.
+
+compiling AnalogAbsoluteEncoder.cpp successful.
+
+compiling NeoDriveMotor.cpp successful.
+
+compiling WPISwerveModule.cpp successful.
+
+compiling NavXGyro.cpp successful.
+
+compiling Robot.cpp successful.
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp:384:26: warning: unused variable 'state' [-Wunused-variable]
+  384 |   frc::SwerveModuleState state{units::feet_per_second_t(speed), units::degree_t(angle)};
+      |                          ^~~~~
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::AutonomousPeriodic()':
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp:207:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  207 |       if (m_command_ptr->get()->IsFinished())
+      |       ^~
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp:211:5: note: here
+  211 |     case 2:
+      |     ^~~~
+
+compiling WPISwerveDrive.cpp successful.
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp: In member function 'virtual void WPISwerveDrive::Drive(std::vector<frc::SwerveModuleState>&)':
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp:83:26: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<frc::SwerveModuleState>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   83 |         for(int i = 0; i < state.size(); i++){
+      |                        ~~^~~~~~~~~~~~~~
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp: In member function 'virtual void WPISwerveDrive::SetIdleMode(bool)':
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp:107:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::array<SwerveModule*, 4>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  107 |      for(int i = 0; i < m_modules.size(); i++){
+      |                     ~~^~~~~~~~~~~~~~~~~~
+
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/jinze/workspace/WapurBot/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

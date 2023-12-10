@@ -14,13 +14,13 @@ void NeoTurnMotor::Configure(SwerveTurnMotorConfig &config){
     m_PID->SetD(config.d);
     m_PID->SetFF(config.ff);
     m_relative_Encoder->SetPositionConversionFactor(config.ratio);
+    m_turn_motor->SetSmartCurrentLimit(20);
     SetInverted(config.inverted);
     m_turn_motor->BurnFlash();
 };    
 
 void NeoTurnMotor::SetRotation(frc::Rotation2d deg){
-    // commanded angle is different than last commanded angle
-    if (std::abs(m_pastCommandAngle-deg.Degrees().to<double>())> 0.000001)
+    if (std::abs(m_pastCommandAngle-deg.Degrees().to<double>()) > 0.000001)
     {
         frc::Rotation2d realTurn = deg - GetRotation();
         if(realTurn.Degrees().to<double>() > 180.0) {
