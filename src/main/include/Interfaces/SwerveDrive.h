@@ -1,8 +1,10 @@
+
 #pragma once
 #include <frc/geometry/Translation2d.h>
 #include <frc/kinematics/ChassisSpeeds.h>
 #include <frc/kinematics/SwerveModuleState.h>
 #include <frc/kinematics/SwerveDriveKinematics.h>
+#include <frc/kinematics/SwerveDriveOdometry.h>
 #include <frc/kinematics/ChassisSpeeds.h>
 #include <vector>
 
@@ -25,7 +27,10 @@ class SwerveDrive
         virtual void SetRobotOriented() = 0;
         virtual void SetFieldOriented() = 0;
         virtual bool GetOrientedMode() = 0; 
+        virtual frc::Pose2d GetPose() = 0;
+        virtual void ResetPose(frc::Pose2d pose) = 0;
+        virtual frc::ChassisSpeeds GetRobotRelativeSpeeds() = 0;
 
     private:
-
+        
 };
