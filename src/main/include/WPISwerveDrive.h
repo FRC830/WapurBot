@@ -1,6 +1,15 @@
 #pragma once
 #include "Interfaces/SwerveDrive.h"
 #include "Interfaces/SwerveModule.h"
+#include "Interfaces/SwerveGyro.h"
+#include "frc/estimator/SwerveDrivePoseEstimator.h"
+#include "frc/geometry/Pose2d.h"
+#include <frc/smartdashboard/Field2d.h>
+#include <frc/smartdashboard/SmartDashboard.h>
+#include <array>
+#include "pathplanner/lib/commands/PPSwerveControllerCommand.h"
+#include "pathplanner/lib/auto/SwerveAutoBuilder.h"
+#include "pathplanner/lib/PathPlanner.h"
 
 struct SwerveConfig{
     bool idle_mode;
@@ -8,11 +17,14 @@ struct SwerveConfig{
     bool orientation;
     double maxDriveSpeed;
     double maxTurnSpeed;
-    //location of motors relative to the center of the robot
+    double deadzone;
+    SwerveGyro *gyro;
+    // Location of motors relative to the center of the robot
     frc::Translation2d frontLeftLocation;
     frc::Translation2d frontRightLocation;
     frc::Translation2d backLeftLocation;
     frc::Translation2d backRightLocation;
+    //std::array<SwerveModule, 4>& modules;
 };
 
 class WPISwerveDrive : public SwerveDrive
@@ -20,7 +32,7 @@ class WPISwerveDrive : public SwerveDrive
     public:
         WPISwerveDrive() = default;
         virtual ~WPISwerveDrive() = default;
-        virtual void Configure(SwerveConfig &config) = 0;
+        virtual void Configure(SwerveConfig &config) override;
         virtual bool GetEbrake() override;
         virtual void SetEbrake(bool ebrake) override;
         virtual void Drive(double x_position, double y_position, double rotation);
@@ -32,27 +44,44 @@ class WPISwerveDrive : public SwerveDrive
         virtual void SetRobotOriented() override;
         virtual void SetFieldOriented() override;
         virtual bool GetOrientedMode() override; 
+        virtual frc::Pose2d GetPose() override;
+        virtual void ResetPose(frc::Pose2d pose) override;
+        virtual frc::ChassisSpeeds GetRobotRelativeSpeeds() override;
+        inline pathplanner::SwerveAutoBuilder *GetAutoBuilder()
+        {
+            return m_autoBuilder;
+        }
 
 
+        inline std::array<SwerveModule*, 4>* GetModules()
+        {
+            return &m_modules;
+        }
 
     private:
-
+        frc::Field2d m_field;
         frc::Translation2d m_frontLeftLocation;
         frc::Translation2d m_frontRightLocation;
         frc::Translation2d m_backLeftLocation;
         frc::Translation2d m_backRightLocation;
+
+        frc::SwerveDriveKinematics<4>* m_kinematics;
         
-        std::vector<SwerveModule> m_modules;
+        std::array<SwerveModule*, 4> m_modules;
 
         std::vector<frc::SwerveModuleState> m_states;
-        
+
         double m_maxDriveSpeed;
         double m_maxTurnSpeed;
         bool m_ebrake = false;
         bool m_driveMotorIdleMode = false;
-        //false is brake and true is coast
+        // false is brake and true is coast
         bool m_orientation = false;
-        //false is robot orientated, true is FieldOrientated. 
-        
+        // false is robot orientated, true is FieldOrientated. 
+        double m_deadzone;
 
+        double ApplyDeadzone(double input);
+        SwerveGyro *m_gyro;
+        frc::SwerveDrivePoseEstimator<4> *m_estimator;
+        pathplanner::SwerveAutoBuilder *m_autoBuilder;
 };
