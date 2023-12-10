@@ -5,10 +5,17 @@
 #pragma once
 
 #include <string>
+
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
-#include <rev/CANSparkMax.h>
-#include <frc/XboxController.h>
+#include "AnalogAbsoluteEncoder.h"
+#include "NeoTurnMotor.h"
+#include "NeoDriveMotor.h"
+#include "WPISwerveModule.h"
+#include "WPISwerveDrive.h"
+#include <iostream>
+#include "SwerveConfig.h"
+#include "NavXGyro.h"
 #include "Elevator.h"
 
 
@@ -32,6 +39,16 @@ class Robot : public frc::TimedRobot {
   const std::string kAutoNameDefault = "Default";
   const std::string kAutoNameCustom = "My Auto";
   std::string m_autoSelected;
+
+
   frc::XboxController m_pilot1{1};
   Elevator m_elevator;
+  
+  AnalogAbsoluteEncoder m_back_left_analog_encoder;
+  NeoTurnMotor m_back_left_turn_motor;
+  NavXGyro gyro;
+  AnalogAbsoluteEncoder m_ABSencoder;
+  NeoTurnMotor m_turnMotor;
+  NeoDriveMotor m_driveMotor;
+  WPISwerveModule m_swerveModule_BL;
 };
