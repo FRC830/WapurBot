@@ -3,21 +3,23 @@
 // the WPILib BSD license file in the root directory of this project.
 
 #include "Robot.h"
-
 #include <fmt/core.h>
 #include <frc/smartdashboard/SmartDashboard.h>
-
+#include <rev/CANSparkMax.h>
 void Robot::RobotInit() {
   m_chooser.SetDefaultOption(kAutoNameDefault, kAutoNameDefault);
   m_chooser.AddOption(kAutoNameCustom, kAutoNameCustom);
   frc::SmartDashboard::PutData("Auto Modes", &m_chooser);
 }
+// Elevator object initialization 
+  
+
 
 /**
  * This function is called every 20 ms, no matter the mode. Use
  * this for items like diagnostics that you want ran during disabled,
  * autonomous, teleoperated and test.
- *
+ * 
  * <p> This runs after the mode specific periodic functions, but before
  * LiveWindow and SmartDashboard integrated updating.
  */
@@ -36,8 +38,6 @@ void Robot::RobotPeriodic() {}
  */
 void Robot::AutonomousInit() {
   m_autoSelected = m_chooser.GetSelected();
-  // m_autoSelected = SmartDashboard::GetString("Auto Selector",
-  //     kAutoNameDefault);
   fmt::print("Auto selected: {}\n", m_autoSelected);
 
   if (m_autoSelected == kAutoNameCustom) {
@@ -55,9 +55,12 @@ void Robot::AutonomousPeriodic() {
   }
 }
 
-void Robot::TeleopInit() {}
+void Robot::TeleopInit() {
 
-void Robot::TeleopPeriodic() {}
+}
+void Robot::TeleopPeriodic() {
+  m_elevator.ElevatorOperation(m_pilot1.GetLeftY(), m_pilot1.GetLeftBumper());
+}
 
 void Robot::DisabledInit() {}
 
