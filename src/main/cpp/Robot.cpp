@@ -199,18 +199,30 @@ void Robot::AutonomousPeriodic() {
   switch (m_state)
   {
     case 0:
-      m_command_ptr->get()->Initialize();
-      ++m_state;
-      break;
+      
+      {
+        m_command_ptr->get()->Initialize();
+        std::cout << m_state << std::endl;
+        ++m_state;
+        break;
+      }
     case 1:
+    {
       m_command_ptr->get()->Execute();
+      std::cout << m_state << std::endl;
       if (m_command_ptr->get()->IsFinished())
       {
         ++m_state;
       }
+      break;
+    }
     case 2:
+    {
       m_command_ptr->get()->End(false);
+      std::cout << m_state << std::endl;
       ++m_state;
+      break;
+    }
     case 3:
     default:
       break;
