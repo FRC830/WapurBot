@@ -48,7 +48,9 @@ class Robot : public frc::TimedRobot {
   std::array<NeoDriveMotor, NUM_MODULES> _drive_motors;
   std::array<WPISwerveModule, NUM_MODULES> _modules;
   WPISwerveDrive _swerve;
-  frc::XboxController _xbox_controller{0};
+  Elevator _elevator;
+  frc::XboxController _pilot{0};
+  frc::XboxController _coPilot{1};
 
   
   NavXGyro _gyro;

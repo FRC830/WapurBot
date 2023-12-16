@@ -3,8 +3,8 @@ compiling NavXGyro.cpp successful.
 
 compiling Robot.cpp successful.
 C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
-C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp:396:26: warning: unused variable 'state' [-Wunused-variable]
-  396 |   frc::SwerveModuleState state{units::feet_per_second_t(speed), units::degree_t(angle)};
+C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp:291:26: warning: unused variable 'state' [-Wunused-variable]
+  291 |   frc::SwerveModuleState state{units::feet_per_second_t(speed), units::degree_t(angle)};
       |                          ^~~~~
 
 compiling WPISwerveDrive.cpp successful.

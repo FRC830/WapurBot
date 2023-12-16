@@ -148,6 +148,18 @@ void Robot::SwerveInit(){
 
 void Robot::RobotInit() {
   SwerveInit();
+
+  //elevator config
+
+  ElevatorConfig eleConfig;
+
+  eleConfig.deadzone = 0.05;
+  eleConfig.slowMultiplier = 0.1; 
+  eleConfig.fastMultiplier = 0.4;
+
+
+  _elevator.Configure(eleConfig);
+
   m_chooser.SetDefaultOption(kAutoNameDefault, kAutoNameDefault);
   m_chooser.AddOption(kAutoNameCustom, kAutoNameCustom);
   frc::SmartDashboard::PutData("Auto Modes", &m_chooser);
@@ -195,6 +207,7 @@ void Robot::AutonomousInit() {
 
 void Robot::AutonomousPeriodic() {
   // auto command = _swerve.GetAutoBuilder();
+  _swerve.SetRobotOriented();
 
   switch (m_state)
   {
@@ -231,136 +244,17 @@ void Robot::AutonomousPeriodic() {
 
 void Robot::TeleopInit() 
 {
-  _swerve.SetFieldOriented();
-  /* AbsoluteEncoderConfig config;
-  config.encoder = &bl_abs_enc;
-  config.is_inverted = true;
-  m_back_left_analog_encoder.Configure(config);
-  m_back_left_analog_encoder.SetZeroHeading(m_back_left_analog_encoder.GetRawHeading());
-
-  SwerveTurnMotorConfig nConfig;
-  nConfig.absouluteEncoder= &m_back_left_analog_encoder;
-  nConfig.deviceID = 4;
-  nConfig.inverted = true;
-  nConfig.turn_motor = &bl_turn_mtr;
-  nConfig.relative_Encoder = &bl_turn_enc;
-  nConfig.PID = &bl_turn_pid; 
-  nConfig.p = TURN_P;
-  nConfig.i = TURN_I;
-  nConfig.d = TURN_D;
-  nConfig.ff = TURN_FF;
-  nConfig.ratio = 1;
-  m_back_left_turn_motor.Configure(nConfig); */
-
-  //   bl_turn_pid.SetP(0.005);
-  //   bl_turn_pid.SetI(0);
-  //   bl_turn_pid.SetD(0.03);
-  // bl_turn_enc.SetPositionConversionFactor(MOTOR_ROT_TO_DEG);
-  // bl_turn_mtr.BurnFlash(); 
-  // // Absolute Encoder configuration
-  // AbsoluteEncoderConfig absolute_encoder_config;
-  // absolute_encoder_config.is_inverted = true;
-  // m_back_left_analog_encoder.Configure(absolute_encoder_config);
-  // m_back_left_analog_encoder.SetZeroHeading(m_back_left_analog_encoder.GetRawHeading());
-
-  // // NavX Gyro Configuration
-  // GyroConfig gyro_config;
-  // gyro_config.is_inverted = true;
-  // gyro_config.zero_heading = units::degree_t(90);
-  // gyro.Configure(gyro_config);
-  // AbsoluteEncoderConfig fl_encoderConfig;
-  // fl_encoderConfig.encoder = &fl_abs_enc;
-  // fl_encoderConfig.is_inverted = FL_ABS_ENC_INVERTED;
-  // fl_encoderConfig.zero_heading = FL_ZERO_HEADING;
-
-  // m_ABSencoder.Configure(fl_encoderConfig);
-  // m_ABSencoder.SetZeroHeading(m_ABSencoder.GetRawHeading());
-
-  // SwerveTurnMotorConfig fl_turnConfig;
-  // fl_turnConfig.absouluteEncoder = &m_ABSencoder;
-  // fl_turnConfig.d = TURN_D;
-  // fl_turnConfig.deviceID = BL_TURN_MTR_ID;
-  // fl_turnConfig.ff = TURN_FF;
-  // fl_turnConfig.i = TURN_I;
-  // fl_turnConfig.inverted = BL_TURN_MTR_INVERTED;
-  // fl_turnConfig.p = TURN_P;
-  // fl_turnConfig.PID = &bl_turn_pid;
-  // fl_turnConfig.ratio = MOTOR_ROT_TO_DEG;
-  // fl_turnConfig.relative_Encoder = &bl_turn_enc;
-  // fl_turnConfig.turn_motor = &bl_turn_mtr;
-
-  // SwerveDriveMotorConfig fl_driveConfig;
-  // fl_driveConfig.d = DRIVE_D;
-  // fl_driveConfig.ff = DRIVE_FF;
-  // fl_driveConfig.i = DRIVE_I;
-  // fl_driveConfig.p = DRIVE_P;
-  // fl_driveConfig.PID = &fl_drive_pid;
-  // fl_driveConfig.ratio = MOTOR_ROT_TO_FT / 60.0;
-  // fl_driveConfig.encoder = &fl_drive_enc;
-  // fl_driveConfig.motor = &fl_drive_mtr;
-
-  // m_driveMotor.Configure(fl_driveConfig);
-
-
-  // m_swerveModule_FL.Configure(moduleConfig);
-
-
-  // AbsoluteEncoderConfig bl_encoderConfig;
-  // bl_encoderConfig.encoder = &bl_abs_enc;
-  // bl_encoderConfig.is_inverted = BL_ABS_ENC_INVERTED;
-  // bl_encoderConfig.zero_heading = BL_ZERO_HEADING;
-
-  // m_ABSencoder.Configure(bl_encoderConfig);
-  // m_ABSencoder.SetZeroHeading(m_ABSencoder.GetRawHeading());
   
-  // SwerveTurnMotorConfig bl_turnConfig;
-  // bl_turnConfig.absouluteEncoder = &m_ABSencoder;
-  // bl_turnConfig.d = TURN_D;
-  // bl_turnConfig.deviceID = BL_TURN_MTR_ID;
-  // bl_turnConfig.ff = TURN_FF;
-  // bl_turnConfig.i = TURN_I;
-  // bl_turnConfig.inverted = BL_TURN_MTR_INVERTED;
-  // bl_turnConfig.p = TURN_P;
-  // bl_turnConfig.PID = &bl_turn_pid;
-  // bl_turnConfig.ratio = MOTOR_ROT_TO_DEG;
-  // bl_turnConfig.relative_Encoder = &bl_turn_enc;
-  // bl_turnConfig.turn_motor = &bl_turn_mtr;
-
-  // m_turnMotor.Configure(bl_turnConfig);
-
-  // SwerveDriveMotorConfig bl_driveConfig;
-  // bl_driveConfig.d = DRIVE_D;
-  // bl_driveConfig.ff = DRIVE_FF;
-  // bl_driveConfig.i = DRIVE_I;
-  // bl_driveConfig.p = DRIVE_P;
-  // bl_driveConfig.PID = &bl_drive_pid;
-  // bl_driveConfig.ratio = MOTOR_ROT_TO_FT / 60.0;
-  // bl_driveConfig.encoder = &bl_drive_enc;
-  // bl_driveConfig.motor = &bl_drive_mtr;
-
-  // m_driveMotor.Configure(bl_driveConfig);
-
-  
-  // SwerveModuleConfig moduleConfig;
-  // moduleConfig.driveMotor = &m_driveMotor;
-  // moduleConfig.idleMode = true;
-  // moduleConfig.turnMotor = &m_turnMotor;
-
-
-  // m_swerveModule_BL.Configure(moduleConfig);
-
-
+// deleted old swerve init spam
 
   frc::SmartDashboard::PutNumber("Speed", 0.0);
   frc::SmartDashboard::PutNumber("ang", 0.0);
   
-  
-
-  // 
 }
 
 void Robot::TeleopPeriodic() 
 { 
+  _swerve.SetFieldOriented();
   // TEMPORARY - for finding conversion factor
   frc::SmartDashboard::PutNumber("FL Drive Motor Rotations", fl_drive_enc.GetPosition());
   frc::SmartDashboard::PutNumber("FR Drive Motor Rotations", fr_drive_enc.GetPosition());
@@ -423,11 +317,21 @@ void Robot::TeleopPeriodic()
   frc::SmartDashboard::PutNumber("BR Velocity", br_drive_enc.GetVelocity());
 
   // XBox controller
-  double left_x = _xbox_controller.GetLeftX();
-  double left_y = _xbox_controller.GetLeftY();
-  double right_x = _xbox_controller.GetRightX();
+  
+  double slowFactor = 0.2;
+
+
+  bool slowMode = _pilot.GetLeftBumper();
+  double left_x = slowMode ? _pilot.GetLeftX() * slowFactor : _pilot.GetLeftX();
+  double left_y = slowMode ? _pilot.GetLeftY() * slowFactor : _pilot.GetLeftY();
+  double right_x = slowMode ? _pilot.GetRightX() * slowFactor : _pilot.GetRightX();
+
+  
+
   // TODO: Add deadzone to correct joystick drift
-  _swerve.Drive(left_y, left_x, -right_x);
+  _swerve.Drive(left_y, left_x, right_x);
+  _elevator.ElevatorOperation(_coPilot.GetRightY(), _coPilot.GetLeftBumper());
+  
 }
 
 void Robot::DisabledInit() {}
