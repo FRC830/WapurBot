@@ -1,20 +1,27 @@
-See file:///C:/Users/jinze/workspace/WapurBot/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+See file:///C:/Users/zelin/source/repos/ratpack-robotics/WapurBot/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
 compiling NavXGyro.cpp successful.
 
 compiling Robot.cpp successful.
-C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
-C:\Users\jinze\workspace\WapurBot\src\main\cpp\Robot.cpp:291:26: warning: unused variable 'state' [-Wunused-variable]
-  291 |   frc::SwerveModuleState state{units::feet_per_second_t(speed), units::degree_t(angle)};
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\Robot.cpp:293:26: warning: unused variable 'state' [-Wunused-variable]
+  293 |   frc::SwerveModuleState state{units::feet_per_second_t(speed), units::degree_t(angle)};
       |                          ^~~~~
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::AutonomousPeriodic()':
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\Robot.cpp:241:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  241 |       _swerve.Drive(0, 0, 0);
+      |       ~~~~~~~~~~~~~^~~~~~~~~
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\Robot.cpp:242:5: note: here
+  242 |     default:
+      |     ^~~~~~~
 
 compiling WPISwerveDrive.cpp successful.
-C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp: In member function 'virtual void WPISwerveDrive::Drive(std::vector<frc::SwerveModuleState>&)':
-C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp:83:26: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<frc::SwerveModuleState>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\WPISwerveDrive.cpp: In member function 'virtual void WPISwerveDrive::Drive(std::vector<frc::SwerveModuleState>&)':
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\WPISwerveDrive.cpp:83:26: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<frc::SwerveModuleState>::size_type' {aka 'unsigned int'} [-Wsign-compare]
    83 |         for(int i = 0; i < state.size(); i++){
       |                        ~~^~~~~~~~~~~~~~
-C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp: In member function 'virtual void WPISwerveDrive::SetIdleMode(bool)':
-C:\Users\jinze\workspace\WapurBot\src\main\cpp\WPISwerveDrive.cpp:107:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::array<SwerveModule*, 4>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\WPISwerveDrive.cpp: In member function 'virtual void WPISwerveDrive::SetIdleMode(bool)':
+C:\Users\zelin\source\repos\ratpack-robotics\WapurBot\src\main\cpp\WPISwerveDrive.cpp:107:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::array<SwerveModule*, 4>::size_type' {aka 'unsigned int'} [-Wsign-compare]
   107 |      for(int i = 0; i < m_modules.size(); i++){
       |                     ~~^~~~~~~~~~~~~~~~~~
 
-Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/jinze/workspace/WapurBot/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/zelin/source/repos/ratpack-robotics/WapurBot/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

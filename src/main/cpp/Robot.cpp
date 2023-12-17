@@ -155,7 +155,7 @@ void Robot::RobotInit() {
 
   eleConfig.deadzone = 0.05;
   eleConfig.slowMultiplier = 0.1; 
-  eleConfig.fastMultiplier = 0.4;
+  eleConfig.fastMultiplier = 0.2;
 
 
   _elevator.Configure(eleConfig);
@@ -193,7 +193,7 @@ void Robot::AutonomousInit() {
   // m_autoSelected = SmartDashboard::GetString("Auto Selector",
   //     kAutoNameDefault);
   fmt::print("Auto selected: {}\n", m_autoSelected);
-  m_trajectory = pathplanner::PathPlanner::loadPathGroup("test_path", {pathplanner::PathConstraints{5_mps, 3.5_mps_sq}});
+  m_trajectory = pathplanner::PathPlanner::loadPathGroup("test_path", {pathplanner::PathConstraints{10_mps, 3.5_mps_sq}});
   std::cout << "Trajectory size: " << m_trajectory.size() << std::endl;
   m_command_ptr = std::make_unique<frc2::CommandPtr>(_swerve.GetAutoBuilder()->fullAuto(m_trajectory));
   // m_commandptr = std::move(_swerve.GetAutoBuilder()->fullAuto(trajectory));
@@ -233,11 +233,14 @@ void Robot::AutonomousPeriodic() {
     {
       m_command_ptr->get()->End(false);
       std::cout << m_state << std::endl;
+      _swerve.Drive(0, 0, 0);
       ++m_state;
       break;
     }
     case 3:
+      _swerve.Drive(0, 0, 0);
     default:
+      _swerve.Drive(0, 0, 0);
       break;
   }
 }
